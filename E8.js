@@ -11,3 +11,4 @@ const repeat = (param1, param2) => {
 }
 
 console.log(repeat('VASCO', 10))
+console.log(repeat(12, 5))
