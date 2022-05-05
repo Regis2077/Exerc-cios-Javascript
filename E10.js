@@ -5,8 +5,7 @@ const array = arr =>{
     const firstEl = arr.shift() 
     const lastEl =  arr.pop()
 
-    const firstAndLast = [firstEl, lastEl]
-    return firstAndLast
+    return [firstEl, lastEl]
 }
 
 console.log(array(['Mercedes', 'Red Bull', 'Willians', 'Hass', 'Ferrari']))

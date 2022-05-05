@@ -6,3 +6,24 @@ algumas situações devido a referências a objetos. Abaixo, está a descrição
 nome de uma propriedade contida nesse objeto. Em seguida, retorne uma cópia desse objeto sem a
 propriedade especificada no segundo parâmetro */
 
+    let haas =  {
+        Nome: 'Haas Team',
+        piloto: 'Nikita Mazepim',
+        categoria: "formula 1"
+    }
+
+    let redBull =  {
+        Nome: 'Oracle Red Bull',
+        piloto: 'Max Verstappen',
+        categoria: "formula 1"
+    }
+
+    
+    const removeProp = (objName, prop) => {
+        const copia = Object.assign({}, objName)
+
+         delete copia[prop]
+         return copia
+    }
+    
+console.log(removeProp(haas, piloto))

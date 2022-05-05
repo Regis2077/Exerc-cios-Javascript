@@ -3,9 +3,9 @@ exemplo, se a entrada for 2, a função deverá retornar "fevereiro", pois este 
 
 const month = index =>{
     
-    const months = ["Invalid Month","January", "Ferbuary", "March", "April", "may", "June", "July", "August", "September", "October", "November", "December"]
+    const months = ["January", "Ferbuary", "March", "April", "may", "June", "July", "August", "September", "October", "November", "December"]
     
-    return months[index]
+    return months[--index]
 }
 
 console.log(month(1))

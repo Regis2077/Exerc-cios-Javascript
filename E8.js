@@ -2,13 +2,21 @@
 que o segundo será o número de vezes que haverá repetição. Um array será retornado.
  */
 
-const repeat = (param1, param2) => {
+const repeat = (item, qntd) => {
     const arr = []
-    for ( i = 0; i  < param2; i++){
-        arr.push(param1)
+    for ( i = 0; i  < qntd; i++){
+        arr.push(item)
     }
     return arr
 }
-
 console.log(repeat('VASCO', 10))
 console.log(repeat(12, 5))
+
+//outra resolução 
+const repeat2 = (item, qntd) => {
+    return Array(qntd).fill(item)
+}
+
+
+console.log(repeat2('yoda', 10))
+console.log(repeat2(12, 5))

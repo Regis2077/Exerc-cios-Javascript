@@ -4,7 +4,7 @@ multiplicação deles. Porém, não utilize o operador de mutiplicação.*/
 const multiply = (num1, num2) => {
     let soma = 0
     for ( i = 0; i  < num2; i++){
-        soma = soma + num1
+        soma += num1
     }
     return soma
 }

@@ -5,15 +5,12 @@ de entrada não for de nenhum dos tipo acima, retorne "booleano ou número esper
 tipo ..." */
 
 const inverse = value => {
-    
-    if(value == true) return false
-    if(value == false) return true
+    const type =  typeof value
 
-    let negative  = value * -1
-    let num =  new Number(value)
-    if (value == num) return negative
+    if(type == "boolean") return !value
+    if (type == "number") return -value
     
-    else if (value != num || Boolean)  return `Booleano ou número esperado, o parametro é do tipo ${typeof(value)}` 
+    else if (type != "number" || "boolean")  return `Booleano ou número esperado, o parametro é do tipo ${typeof(value)}` 
 }
 
 
